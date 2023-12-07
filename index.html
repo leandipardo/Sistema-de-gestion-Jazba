@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Jazba gestion.</title>
+</head>
+<body>
+    <header>
+        <img src="/assets/Capa 1.svg" alt="Jazba logo">
+    </header>
+    <main>
+        <form action="" id="form-jazba">
+            <section id="name-container">
+                <label>Choose a browser from this list: <input list="client-name" name="myBrowser"/></label>
+              <datalist id="client-name">
+                <option value="leandro"></option>
+                <option value="martin"></option>
+                <option value="rodrigo"></option>
+                <option value="agustin"></option>
+                <option value="benjamin"></option>
+                <option value="sofia"></option>
+              </datalist>
+                </div>
+                <div>
+                    <label for="client-of">Cliente de:
+                        <select name="clientOf" id="client-of">
+                            <option selected>Cristian</option>
+                            <option>Damian</option>
+                        </select>
+                    </label>
+                </div>
+            </section>
+        <br>
+        <section id="card-container">
+            <div id="checkbox-container">
+                <input type="checkbox" id="color" name="color" value="color">
+                <label for="color">color</label>
+                <input data-color type="text" disabled placeholder="$ precio $">
+
+                <input type="checkbox" id="corte" name="corte" value="corte">
+                <label for="corte">corte</label>
+                <input data-corte type="text" disabled placeholder="$ precio $">
+
+                <input type="checkbox" id="alisado-keratina" name="alisado-keratina" value="alisado-keratina">
+                <label for="alisado-keratina">alisado / keratina</label>
+                <input data-alisado-keratina type="text" disabled placeholder="$ precio $">
+
+                <input type="checkbox" id="ampolla-bañoDeCrema" name="ampolla-bañoDeCrema" value="ampolla-bañoDeCrema">
+                <label for="ampolla-bañoDeCrema">ampolla baño de crema</label>
+                <input data-ampolla-bañoDeCrema type="text" disabled placeholder="$ precio $">
+
+                <input type="checkbox" id="peinado" name="peinado" value="peinado">
+                <label for="peinado">peinado</label>
+                <input data-peinado type="text" disabled placeholder="$ precio $">
+                
+                <input type="checkbox" id="productos" name="productos" value="productos">
+                <label for="productos">productos</label>
+                <input data-productos type="text" disabled placeholder="$ precio $">
+            </div>
+            <div id="info-container">
+                <p>detalle:</p><p></p>
+            </div>
+        </section>
+            <section id="button-container">
+                <input type="text">
+                <button type="submit" id="send">Enviar</button>
+                <button type="reset" id="clear">Limpiar</button>
+                <button id="translate">➡️</button>
+            </section>
+        </form>
+    </main>
+    <script type="module" src="/modules.js"></script>
+</body>
+</html>

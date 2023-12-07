@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Helvetica;
+    background-image: url(/assets/backgorund.svg);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    font-size: 2em;
+    height: 100dvh;
+}
+header{
+    width: 100%;
+    display: flex;
+    max-height: 30vh;
+    margin-top: 5vh;
+}
+header img{
+    position: relative;
+    left: 8.5vw;
+    outline: solid black 2px;
+    border-radius: 15px 15px 0 0;
+    width: 80vw;
+    background-color: white;
+    padding: 50px 0;
+}
+#form-jazba{
+    outline: solid 2px black;
+    position: relative;
+    width: 80vw;
+    height: max-content;
+    background-color: rgba(255, 255, 255, 0.923);
+    border-radius: 0 0 15px 15px;
+    padding:5vh 1.5vw;
+    left: 8.5vw;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-x: hidden;
+}
+select,
+input{
+    font-size: 1em;
+}
+#name-container,
+#button-container,
+#name-container div{
+    display: flex;
+    justify-content: center;
+}
+#name-container div{
+    min-width: 30%;
+    max-width: 50%;
+}
+#card-container{
+    position: relative;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width: 170vw;
+    transition: transform .5s ease-out;
+}
+#checkbox-container{
+    width: 90%;
+    grid-column: 1 / 1;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr;
+    grid-template-areas: repeat(6, 1fr);
+}
+#button-container button{
+    font-size: 1em;
+    padding: 25px;
+    margin: 25px 25px;
+}
+#info-container{
+    position: relative;
+    grid-column: 2 / 2;
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    border: solid black 2px;
+}
+.translate{
+    transform: translateX(-85vw);
+}
+.rotate{
+    transform: rotateZ(180deg);
+}
